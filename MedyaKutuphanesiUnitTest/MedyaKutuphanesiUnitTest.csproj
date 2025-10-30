@@ -9,9 +9,9 @@
 	<ItemGroup>
 		
 		<PackageReference Include="Baz.AletKutusu" Version="1.0.93" />
-		<PackageReference Include="Baz.Mapper.Pattern.Entity" Version="1.2.50" />
-		<PackageReference Include="Baz.Model.Entity" Version="1.20.40" />
-		<PackageReference Include="Baz.RequestManager" Version="1.1.31" />
+		<PackageReference Include="Baz.Mapper.Pattern.Entity" Version="1.2.51" />
+		<PackageReference Include="Baz.Model.Entity" Version="1.20.41" />
+		<PackageReference Include="Baz.RequestManager" Version="1.1.32" />
 		<PackageReference Include="coverlet.collector" Version="3.0.3">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

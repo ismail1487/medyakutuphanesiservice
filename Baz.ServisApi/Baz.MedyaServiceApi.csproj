@@ -16,19 +16,19 @@
   <ItemGroup>
 	  
     <PackageReference Include="Baz.AletKutusu" Version="1.0.93" />
-    <PackageReference Include="Baz.AOP.Logger.ExceptionLog" Version="1.1.40" />
-    <PackageReference Include="Baz.AOP.Logger.Http" Version="1.0.100" />
+    <PackageReference Include="Baz.AOP.Logger.ExceptionLog" Version="1.1.41" />
+    <PackageReference Include="Baz.AOP.Logger.Http" Version="1.0.101" />
     <PackageReference Include="Baz.Attributes" Version="1.0.1" />
-    <PackageReference Include="Baz.Model.Entity" Version="1.20.40" />
+    <PackageReference Include="Baz.Model.Entity" Version="1.20.41" />
     <PackageReference Include="Baz.ProcessResult" Version="1.0.13" />
-    <PackageReference Include="Baz.RequestManager" Version="1.1.31" />
+    <PackageReference Include="Baz.RequestManager" Version="1.1.32" />
     <PackageReference Include="Castle.Core" Version="4.4.1" />
     <PackageReference Include="Decor.Extensions.Microsoft.DependencyInjection" Version="2.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
-    <PackageReference Include="SharedSession" Version="1.2.14" />
+    <PackageReference Include="SharedSession" Version="1.2.15" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
