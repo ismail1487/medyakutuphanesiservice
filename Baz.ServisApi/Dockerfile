@@ -6,11 +6,13 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Baz.ServisApi/Baz.MedyaServiceApi.csproj", "Baz.ServisApi/"]
-COPY ["Baz.Service/Baz.Service.csproj", "Baz.Service/"]
-RUN dotnet restore "Baz.ServisApi/Baz.MedyaServiceApi.csproj" -s http://172.16.31.10/NugetServer/nuget -s https://api.nuget.org/v3/index.json
-COPY . .
-WORKDIR "/src/Baz.ServisApi"
+COPY ["bazmedyakutuphanesi/Baz.ServisApi/Baz.MedyaServiceApi.csproj", "bazmedyakutuphanesi/Baz.ServisApi/"]
+COPY ["bazmedyakutuphanesi/Baz.Service/Baz.Service.csproj", "bazmedyakutuphanesi/Baz.Service/"]
+COPY packages /src/packages
+RUN dotnet restore "bazmedyakutuphanesi/Baz.ServisApi/Baz.MedyaServiceApi.csproj" --source /src/packages  --source https://api.nuget.org/v3/index.json
+COPY bazmedyakutuphanesi/Baz.ServisApi bazmedyakutuphanesi/Baz.ServisApi
+COPY bazmedyakutuphanesi/Baz.Service bazmedyakutuphanesi/Baz.Service
+WORKDIR "/src/bazmedyakutuphanesi/Baz.ServisApi"
 RUN dotnet build "Baz.MedyaServiceApi.csproj" -c Release -o /app/build
 
 FROM build AS publish
