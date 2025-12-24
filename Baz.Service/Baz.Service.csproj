@@ -7,16 +7,16 @@
 
   <ItemGroup>
 	  
-    <PackageReference Include="Baz.AOP.Logger.ExceptionLog" Version="1.1.41" />
-    <PackageReference Include="Baz.AOP.Logger.Http" Version="1.0.101" />
-    <PackageReference Include="Baz.Mapper.Pattern" Version="1.2.51" />
-    <PackageReference Include="Baz.Mapper.Pattern.Entity" Version="1.2.51" />
-    <PackageReference Include="Baz.Model.Entity" Version="1.20.41" />
+    <PackageReference Include="Baz.AOP.Logger.ExceptionLog" Version="1.1.42" />
+    <PackageReference Include="Baz.AOP.Logger.Http" Version="1.0.102" />
+    <PackageReference Include="Baz.Mapper.Pattern" Version="1.2.52" />
+    <PackageReference Include="Baz.Mapper.Pattern.Entity" Version="1.2.52" />
+    <PackageReference Include="Baz.Model.Entity" Version="1.20.42" />
     <PackageReference Include="Baz.Model.Pattern" Version="1.0.12" />
     <PackageReference Include="Baz.ProcessResult" Version="1.0.13" />
-    <PackageReference Include="Baz.Repository.Pattern" Version="1.1.51" />
-    <PackageReference Include="Baz.Repository.Pattern.Entity" Version="2.3.87" />
-    <PackageReference Include="Baz.RequestManager" Version="1.1.32" />
+    <PackageReference Include="Baz.Repository.Pattern" Version="1.1.52" />
+    <PackageReference Include="Baz.Repository.Pattern.Entity" Version="2.3.88" />
+    <PackageReference Include="Baz.RequestManager" Version="1.1.33" />
     <PackageReference Include="Decor.Extensions.Microsoft.DependencyInjection" Version="2.0.5" />
   </ItemGroup>
 </Project>
