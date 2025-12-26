@@ -9,7 +9,7 @@ WORKDIR /src
 COPY ["bazmedyakutuphanesi/Baz.ServisApi/Baz.MedyaServiceApi.csproj", "bazmedyakutuphanesi/Baz.ServisApi/"]
 COPY ["bazmedyakutuphanesi/Baz.Service/Baz.Service.csproj", "bazmedyakutuphanesi/Baz.Service/"]
 COPY packages /src/packages
-RUN dotnet restore "bazmedyakutuphanesi/Baz.ServisApi/Baz.MedyaServiceApi.csproj" --source /src/packages
+RUN dotnet restore "bazmedyakutuphanesi/Baz.ServisApi/Baz.MedyaServiceApi.csproj" --source /src/packages --source https://api.nuget.org/v3/index.json
 COPY bazmedyakutuphanesi/Baz.ServisApi bazmedyakutuphanesi/Baz.ServisApi
 COPY bazmedyakutuphanesi/Baz.Service bazmedyakutuphanesi/Baz.Service
 WORKDIR "/src/bazmedyakutuphanesi/Baz.ServisApi"
